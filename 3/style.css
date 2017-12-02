@@ -1,0 +1,520 @@
+body
+{
+    font-family: "HelevaticaL TStd";
+}
+
+ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p
+{
+    margin: 0;
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+header
+{
+    background: url('img/sh.png') left bottom repeat-x, url('img/header_line.png') repeat, url('img/header.png') left top / cover no-repeat;
+}
+
+header .top
+{
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    overflow:hidden;
+    margin-bottom: 60px;
+}
+
+.logo
+{
+    display: inline-block;
+    width: 127px;
+    height: 50px;
+    background: url('img/logo.png') no-repeat;
+    margin: 27px 0 23px 0;
+}
+
+.navbar
+{
+    float: right;
+    margin: 36px 0 30px 0;
+}
+
+.menu
+{
+    list-style: none;
+}
+
+.menu > li
+{
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.menu > li:hover
+{
+    background: rgba(0,0,0,0.7);
+}
+
+.menu > li > a
+{
+    padding: 12px 20px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+header .bottom
+{
+    text-align: center;
+}
+
+header .bottom > h1
+{
+    font-family: "Museo700";
+    font-size: 48px;
+    color: white;
+    text-shadow: 1px 0px rgba(0,0,0,0.3);
+    margin-bottom: 40px;
+}
+
+header .bottom > span
+{
+    text-shadow: 1px 0px rgba(0,0,0,0.3);
+    font-family: "Museo500";
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 35px;
+    display: block;
+}
+
+header .bottom > .btns
+{
+    display: block;
+    margin-bottom: 40px;
+}
+
+header .bottom > .btns > a
+{
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+header .bottom > .btns > .start
+{
+    padding: 15px 20px;
+    background: #fb2f3a;
+    box-shadow: 0px 2px 0px 1px rgba(0,0,0,0.3);
+    border-radius: 3px;
+    margin-right: 20px;
+}
+
+header .bottom > .btns > .more
+{
+    text-decoration: underline;
+}
+
+header .bottom > .br
+{
+    width: 954px;
+    height: 280px;
+    display: block;
+    margin: auto;
+    background: url('img/br.png') no-repeat;
+}
+
+.adv
+{
+    box-shadow: inset 0px 1px 0px 0px #fff, 0px 0px 0px 1px #ddd;
+    padding: 190px 0 60px 0;
+    background: #eee;
+}
+
+.adv .adv_list
+{
+    position: relative;
+}
+
+.adv .adv_list:before
+{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -80px;
+    height: 5px;
+    width: 100%;
+    background: url('img/line.png') repeat-x;
+}
+
+.adv .adv_list > li
+{
+    position: relative;
+    text-align: center;
+}
+
+.adv_list > .f:before
+{
+    background: url('img/item_1.png') center center no-repeat, url('img/circle.png') no-repeat;
+}
+
+.adv_list > .s:before
+{
+    background: url('img/item_2.png') center center no-repeat, url('img/circle.png') no-repeat;
+}
+
+.adv_list > .t:before
+{
+    background: url('img/item_3.png') center center no-repeat, url('img/circle.png') no-repeat;
+}
+
+.adv_list > .fo:before
+{
+    background: url('img/item_4.png') center center no-repeat, url('img/circle.png') no-repeat;
+}
+
+.adv .adv_list > li:before
+{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -125px;
+    left: 92.5px;
+    height: 100px;
+    width: 100px;
+}
+
+.adv .adv_list > li > span
+{
+    font-size: 18px;
+    font: "Museo700";
+}
+
+.adv .adv_list > li > p
+{
+    font-size: 14px;
+    line-height: 18px;
+    color: #7d7d7d;
+    margin: 25px 0 38px 0;
+}
+
+.adv .adv_list > li > a
+{
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    box-shadow: 0px 1px 0px 1px rgba(0,0,0,0.2), inset 0px 2px 0px 0px rgba(255,255,255,0.15);
+    background: #9a9c9f;
+    padding: 12px 8px;
+    font-size: 12px;
+    font-weight:bold;
+    color: white;
+}
+
+.portfolio
+{
+    padding: 60px 0 40px 0;
+}
+
+.portfolio .top
+{
+    border: 0;
+    margin-bottom: 110px;
+}
+
+.portfolio .info > .title
+{
+    font-family: "Museo700";
+    font-size: 18px;
+    margin: 10px 0 25px 0;
+    display: block;
+}
+
+.portfolio .info > p
+{
+    font-size: 14px;
+    line-height: 18px;
+    color: #7d7d7d;
+    margin: 0 0 40px 0;
+}
+
+.portfolio .info > .desc
+{
+    font-weight: bold;
+    font-size: 14px;
+    color: #fb2f3a;
+}
+
+.portfolio .works > li > figure > img
+{
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.portfolio .works > li > figure > figcaption
+{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.name
+{
+    font-family: "Museo700";
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1;
+    display: block;
+}
+
+.type
+{
+    font-size: 12px;
+    display: block;
+    line-height: 1;
+}
+
+.portfolio .partners > li
+{
+    height: 60px;
+    opacity: 0.5;
+}
+
+.portfolio .partners > .c1
+{
+    background: url('img/c_1.png') top center no-repeat;
+}
+
+.portfolio .partners > .c2
+{
+    background: url('img/c_2.png') top center no-repeat;
+}
+
+.portfolio .partners > .c3
+{
+    background: url('img/c_3.png') top center no-repeat;
+}
+
+.portfolio .partners > .c4
+{
+    background: url('img/c_4.png') top center no-repeat;
+}
+
+footer > .top
+{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 60px 0;
+}
+
+.testimonial > img
+{
+    float: left;
+}
+
+.testimonial > *:not(img)
+{
+    margin: 0;
+    margin-left: 80px;
+}
+
+.testimonial > .title
+{
+    font-size: 18px;
+    font-family: "Museo700";
+    display: block;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.testimonial > p
+{
+    font-size: 14px;
+    line-height: 18px;
+    color: #7d7d7d;
+    font-family: Georgia;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.testimonial > p + span
+{
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+}
+
+.testimonial > a
+{
+    font-size: 12px;
+    color: #fb2f3a;
+}
+
+.posts > .title
+{
+    font-size: 18px;
+    font-family: "Museo700";
+    margin-bottom: 30px;
+    display: block;
+}
+
+.posts > .post
+{
+    border-bottom: 1px solid #ddd;
+}
+
+.posts > .post:last-child
+{
+    border:0;
+}
+
+.posts > .post > .title
+{
+    font-size: 14px;
+    font-family: "Museo700";
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.posts > .post:first-child > .title
+{
+    margin-top: 0;
+}
+
+.posts > .post > .date
+{
+    font-size: 12px;
+    color: #7d7d7d;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.posts > .post > .date > span
+{
+    color: #fb2f3a;
+}
+
+.tw > .title
+{
+    font-size: 18px;
+    font-family: "Museo700";
+    margin-bottom: 30px;
+    display: block;
+}
+
+.tw > div
+{
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.tw > div:nth-child(2)
+{
+    padding-top: 0;
+}
+
+.tw > div:last-child
+{
+    padding-bottom: 0;
+    border: 0;
+}
+
+.tw > div > img
+{
+    float: left;
+}
+
+.tw > div > p
+{
+    font-size: 14px;
+    line-height: 24px;
+    color: #7d7d7d;
+    margin-left: 80px;
+}
+
+.tw > div > p > a
+{
+    color: #fb2f3a;
+    display: inline-block;
+}
+
+footer > .bottom
+{
+    padding: 50px 0 290px 0;
+}
+
+footer > .bottom nav
+{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+footer > .bottom nav > ul > li
+{
+    margin-right: 40px;
+    display: inline-block;
+}
+
+footer > .bottom nav > ul > li > a
+{
+    font-size: 12px;
+    color: #8f8f8f;
+    font-family: "HelveticaL TStd Roman";
+}
+
+footer > .bottom nav > ul > li:last-child
+{
+    margin: 0;
+}
+
+footer > .bottom .btns
+{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+footer > .bottom .btns > a
+{
+    padding: 12px 15px 12px 40px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    box-shadow: 0px 1px 0px 1px rgba(0,0,0,0.2), inset 0px 2px 0px 0px rgba(255,255,255,0.15);
+    font-size: 12px;
+    color: white;
+    font-family: "HelveticaL TStd Roman";
+    display: inline-block;
+}
+
+.btns > .ftw
+{
+    background: #569ccd url('img/tw.png') 15px center no-repeat;
+    margin-right: 10px;
+}
+
+.btns > .ffb
+{
+    background: #2272a9 url('img/fb.png') 15px center no-repeat;
+}
+
+footer > .bottom span
+{
+    font-size: 12px;
+    text-align: center;
+    display: block;
+}
+
+footer > .bottom span > span
+{
+    font-weight: bold;
+    display: inline-block;
+}

@@ -1,0 +1,390 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+body
+{
+    display: flex;
+    flex-flow: row wrap;
+    font-family: "Montserrat";
+}
+
+header
+{
+    flex: 1 1 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header > *
+{
+    flex: 1 1 100%;
+}
+
+header > nav
+{
+    background: #373c3f;
+    padding: 2.500rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > nav > span
+{
+    color: white;
+    display: none;
+}
+
+header > nav > #burger
+{
+    width: 5.125rem;
+    height: 4.625rem;
+    padding: 1.688rem;
+    box-sizing: border-box;
+    display: none;
+}
+
+header > nav > #burger:hover
+{
+    background: #202529;
+}
+
+header > nav > #burger > .line
+{
+    width: 100%;
+    height: 4px;
+    background: white;
+    margin: auto;
+    position: relative;
+}
+
+header > nav > #burger > .line:before
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 8px;
+    height: 4px;
+    background: white;
+}
+
+header > nav > #burger > .line:after
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 8px;
+    height: 4px;
+    background: white;
+}
+
+.menu
+{
+    display: flex;
+    list-style: none;
+    flex-flow: row wrap;
+}
+
+.menu > li
+{
+    margin-right: 1.875rem;
+}
+
+.menu > li:last-child
+{
+    margin: 0;
+}
+
+.menu > li > a
+{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.938rem;
+    font-weight: bold;
+}
+
+.info
+{
+    background: linear-gradient(to left top, #078aa4, #19b4c6);
+    color: white;
+    padding: 12.813rem 0 10.625rem 5rem;
+}
+
+.info > .center
+{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 71.875%;
+    max-width: 45.625rem;
+}
+
+.info > .center > h1
+{
+    font-size: 3.125rem;
+    font-weight: normal;
+    flex: 1 1;
+    margin-bottom: 3.125rem;
+}
+
+.info > .center > span
+{
+    font-size: 1.875rem;
+    flex: 1 1;
+    color: #a8d6e0;
+}
+
+.first
+{
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: row nowrap;
+}
+
+.first > span
+{
+    flex: 3 1;
+    padding: 6.875rem 0 6.875rem 5.625rem;
+    background: #27212c;
+    color: #9282a0;
+    font-size: 1.875rem;
+}
+
+.first > a
+{
+    flex: 1 1;
+    background: #bc3183 url('img/arrow.png') center center no-repeat;
+    background-size: 10%;
+}
+
+.second
+{
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: row wrap;
+}
+
+.second > div
+{
+    flex: 1 1;
+    height: 18.438rem;
+}
+
+.second > .d1
+{
+    background: #5b0fa1 url('img/arrow.png') center center no-repeat;
+}
+
+.second > .d2
+{
+    background: url('img/img1.png') center center no-repeat;
+    background-size: cover;
+}
+
+.second > .d3
+{
+    background: url('img/img2.png') center center no-repeat;
+    background-size: cover;
+}
+
+footer
+{
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: row wrap;
+    padding: 3.750rem 5.000rem 11.250rem 5.000rem;
+}
+
+footer > span
+{
+    font-size: 1.625rem;
+    color: #088ca5;
+    flex: 1 1 100%;
+}
+
+footer > .text
+{
+    flex: 1 1;
+    color: #515151;
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+}
+
+footer > .text:last-child
+{
+    margin-left: 4.063rem;
+}
+
+footer > .text > p:first-child
+{
+    margin-bottom: 2.813rem;
+}
+
+@media screen and (max-width: 980px)
+{
+    footer
+    {
+        padding: 4.375rem 4.688rem 6.250rem 4.688rem;
+    }
+}
+
+@media screen and (min-width: 640px)
+{
+    .menu
+    {
+        display: flex!important;
+    }
+}
+
+@media screen and (max-width: 640px)
+{
+    header > nav
+    {
+        padding: 0;    
+        position: relative;
+    }
+    
+    header > nav > span
+    {
+        display: flex;
+        padding-left: 2.375rem;
+        font-size: 1.500rem;
+    }
+    
+    header > nav > #burger
+    {
+        display: flex;
+    }
+    
+    .menu
+    {
+        display: none;
+        flex-flow: column nowrap;
+        position: absolute;
+        top: 4.625rem;
+        right: 0;
+        left: 0;
+        align-items: center;
+        background: #373c3f;
+    }
+    
+    .menu > li
+    {
+        margin: 0;
+        margin-bottom: 1.875rem;
+    }
+    
+    .menu > li:last-child
+    {
+        margin-bottom: 1.875rem;
+    }
+    
+    .info
+    {
+        padding: 7.188rem 0 6.563rem 3.125rem;
+    }
+    
+    .info > .center
+    {
+        //max-width: 28.438rem;
+    }
+    
+    .info > .center > h1
+    {
+        font-size: 2.188rem;
+        margin-bottom: 2.000rem;
+    }
+    
+    .info > .center > span
+    {
+        font-size: 1.250rem;
+    }
+    
+    .first > span
+    {
+        font-size: 1.250rem;
+        padding: 4.375rem 0 4.375rem 3.438rem;
+        flex: 3 1;
+    }
+    
+    .second > div
+    {
+        flex: 1 1 100%;
+        height: 34.375rem;
+    }
+    
+    footer > .text:last-child
+    {
+        display: none;
+    }
+    
+    footer > .text
+    {
+        font-size: 1.375rem;
+        line-height: 2.750rem;
+    }
+}
+
+@media screen and (max-width: 320px)
+{
+    header > nav > span
+    {
+        font-size: 0.875rem;
+    }
+    
+    .info
+    {
+        padding: 3.625rem 0 3.438rem 1.563rem;   
+    }
+    
+    .info > .center > h1
+    {
+        font-size: 1.125rem;
+        margin-bottom: 0.938rem;
+    }
+    
+    .info > .center > span
+    {
+        font-size: 0.750rem;
+    }
+    
+    .first > span
+    {
+        font-size: 0.625rem;
+        padding: 2.188rem 0 2.188rem 1.688rem;
+    }
+    
+    .second > div
+    {
+        height: 17.188rem;
+    }
+    
+    footer
+    {
+        padding: 2.188rem 3.125rem 3.125rem 3.125rem;
+    }
+    
+    footer > span
+    {
+        font-size: 1.125rem;
+    }
+    
+    footer > .text
+    {
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+    }
+}

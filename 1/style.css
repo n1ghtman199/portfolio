@@ -1,0 +1,519 @@
+body
+{
+    font-size: 12px;
+    line-height: 1;
+    font-family: HelveticaNeue;
+}
+
+.wrapper
+{
+    padding: 0 10px;
+    box-sizing: border-box;
+    width: 960px;
+    margin: 0 auto;
+}
+
+header
+{
+    background: #2e2e2e url('img/header_bg.png') left top repeat;
+    border-bottom: 4px solid #242424;
+    overflow: hidden;
+}
+
+.top
+{
+    margin: 25px 0;
+}
+
+.logo
+{
+    display: inline-block;
+    width: 130px;
+    height: 36px;
+    background: transparent url('img/logo.png') no-repeat;
+}
+
+.right
+{
+    float: right;
+}
+
+.top > .right
+{
+    margin-top: 5px;
+}
+
+nav
+{
+    display: inline-block;
+}
+
+.menu
+{
+    list-style: none;
+}
+
+.menu > li
+{
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.menu > li:before
+{
+    position: absolute;
+    content: '';
+    right: -20px;
+    top: -8.5px;
+    width: 2px;
+    height: 30px;
+    background: url('img/step.png') no-repeat;
+}
+
+.menu > li > a
+{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.act
+{
+    padding: 10px 15px;
+    box-sizing: border-box;
+    background: #2d2d2d;
+    box-shadow: inset 0px 1px 8px 0px rgba(0,0,0,0.25), 0px 1px 0px 0px rgba(255,255,255,0.25);
+    border-radius: 3px;
+}
+
+.search
+{
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.search_field
+{
+    width: 150px;
+    height: 25px;
+    background: #2f2f2f;
+    border-radius: 10px;
+    border: 0;
+    padding: 7px 5px 7px 26px;
+    box-sizing: border-box;
+    line-height: 1;
+    color: white;
+    box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.3), 0px 1px 0px 0px rgba(46,46,46,0.6);
+}
+
+.search_btn
+{
+    position: absolute;
+    left: 8px;
+    top: 7px;
+    border: 0;
+    width: 13px;
+    height: 13px;
+    background: transparent url('img/search_btn.png');
+    cursor: pointer;
+}
+
+.slider
+{
+    padding: 50px 0;
+    margin-bottom: 80px;
+    background: url('img/slide1.png') right 80px center no-repeat;
+    position: relative;
+}
+
+.slider > .text
+{
+    width: 375px;
+    color: white;
+}
+
+.slider > .text > .title
+{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    line-height: 28px;
+    margin-bottom: 35px;
+}
+
+.slider > .text > p
+{
+    margin-bottom: 25px;
+    line-height: 18px;
+}
+
+.slider > .text > .btn
+{
+    font-weight: bold;
+    font-size: 13px;
+    display: inline-block;
+    border-radius: 3px;
+    color: white;
+    padding: 12px 31px 12px 25px;
+    text-decoration: none;
+    background: #999 url('img/btn.png') no-repeat;
+}
+
+.slider > .toggle_slider
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    list-style: none;
+}
+
+.slider > .toggle_slider > li
+{
+    width: 23px;
+    height: 5px;
+    display: inline-block;
+    background: #888;
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+.slider > .toggle_slider > li:last-child
+{
+    margin: 0;
+}
+
+.slider > .toggle_slider > .activ
+{
+    background: #bebebe;
+}
+
+.main
+{
+    margin-top: -65px;
+    margin-bottom: 80px;
+}
+
+.list
+{
+    list-style: none;
+}
+
+.list > li
+{
+    display: inline-block;
+    padding: 25px;
+    width: 220px;
+    box-sizing: border-box;
+    background: white;
+    position: relative;
+    margin-right: 20px;
+}
+
+.list > li:last-child
+{
+    margin: 0;
+}
+
+.list > li:before
+{
+    position: absolute;
+    content: '';
+    z-index: -1;
+    top: 0;
+    left: -4px;
+    width: 230px;
+    height: 100%;
+    background: url('img/shadow.png') left top no-repeat;
+}
+
+.list > li > .title
+{
+    display: block;
+    font-size: 15px;
+    font-weight: medium;
+    margin-bottom: 25px;
+}
+
+.list > li > .short, .works .left > .short
+{
+    color: #8e8e8e;
+    line-height: 16px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.list > li > p, .works .left > p
+{
+    line-height: 16px;
+    margin-bottom: 35px;
+    color: #333;
+}
+
+.list > li > .more
+{
+    padding-top: 20px;
+    position: relative;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.list > li > .more:after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 165px;
+    height: 5px;
+    background: url('img/topgrad.png') left top repeat-x;
+}
+
+.works
+{
+    overflow: hidden;
+    padding-bottom: 30px; 
+}
+
+.works .left
+{
+    width: 220px;
+    float: left;
+}
+
+.works .title
+{
+    color: #464646;
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    position: relative; 
+}
+
+.works .title:after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 910px;
+    height: 5px;
+    background: url('img/topgrad.png') left top repeat-x;
+}
+
+.works .right
+{
+    width: 700px;
+}
+
+.work_list
+{
+    list-style: none;
+}
+
+.work_list > li
+{
+    width: 220px;
+    height: 200px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.work_list > li:nth-child(3n)
+{
+    margin-right: 0;
+}
+
+.work_list > li > figure
+{
+    position: relative;
+    cursor: pointer;
+}
+
+.work_list > li > figure > figcaption
+{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('img/hover_bg.png') left top repeat;
+}
+
+.work_list > li > figure:hover figcaption
+{
+    display: block;
+}
+
+.work_list > li > figure > figcaption > .more
+{
+    margin: 50px auto 35px auto;
+    width: 72px;
+    height: 72px;
+    background: url('img/more_btn.png') no-repeat;
+}
+
+.work_list .stats
+{
+    list-style: none;
+    color: white;
+    margin: 0 20px 15px 20px;
+    text-align: justify;
+}
+
+.work_list .stats > li
+{
+    display: inline-block;
+    width: 33.3%;
+}
+
+.work_list .stats > li > span
+{
+    display: block;
+}
+
+footer
+{
+    background: #2e2e2e url('img/header_bg.png') left top repeat;
+    border-top: 4px solid #242424;
+    color: white;
+    overflow: hidden;
+}
+
+footer .info > li
+{
+    width: 220px;
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer .info > li:last-child
+{
+    margin: 0;
+}
+
+footer .info > li > .title
+{
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(187, 187, 187,0.4);
+    margin-bottom: 25px;
+}
+
+footer .info > li > p
+{
+    line-height: 14px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+footer .info > li > p:last-child
+{
+    margin: 0;
+}
+
+footer .info > li > p > .tw_name
+{
+    color: #999;
+    font-weight: bold;
+}
+
+footer .info > li > p > .time
+{
+    margin-top: 10px;
+    color: #999;
+    display: block;
+}
+
+footer .info > li > .w_items
+{
+    list-style: none;
+}
+
+footer .info > li > .w_items > li
+{
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    position: relative;
+    background: #ccc;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+
+footer .info > li > .w_items > li:nth-child(4n)
+{
+    margin-right: 0;
+}
+
+footer .info > li > .w_items > li:before
+{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    right: 1px;
+    border: 2px solid white;
+}
+
+footer .bottom
+{
+    background: rgba(37, 37, 37, 0.28);
+    color: #818181;
+    padding: 20px 0;
+}
+
+footer .bottom .logo
+{
+    margin-right: 15px;
+    position: relative;
+    background: url('img/logo2.png') no-repeat;
+}
+
+footer .bottom .logo:before
+{
+    position: absolute;
+    content: '';
+    right: -15px;
+    top: 0.5px;
+    width: 2px;
+    height: 30px;
+    background: url('img/step2.png') no-repeat;
+}
+
+
+footer .bottom .contacts
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
+}
+
+footer .bottom .contacts > span, footer .bottom .copy > span
+{
+    display: block;
+    line-height: 14px;
+    margin-bottom: 10px;
+}
+
+footer .bottom .contacts > span:last-child, footer .bottom .copy > span:last-child
+{
+    margin: 0;
+}
+
+footer .bottom .copy > span > span
+{
+    color: #b2b2b2;
+}

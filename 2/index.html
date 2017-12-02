@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="normilize.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    <header>
+        <nav>
+            <span>Navigation</span>
+            <div id="burger"><div class="line"></div></div>
+            <ul class="menu">
+                <li><a href="">Psd websites</a></li>
+                <li><a href="">UI kits</a></li>
+                <li><a href="">Premium PSD files</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="info">
+            <div class="center">
+                <h1>Awesome Free PSD templates & Resources</h1>
+                <span>www.BlazRobar.com</span>
+            </div>
+        </div>
+    </header>
+    <section class="first">
+        <span>I'm like the Robin Hood of PSD files.</span>
+        <a href="#"></a>
+    </section>
+    <section class="second">
+        <div class="d1"></div>
+        <div class="d2"></div>
+        <div class="d3"></div>
+    </section>
+    <footer>
+        <span>BlazRobar.com</span>
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ipsum non leo tristique eget facilisis lacus commodo. Curabitur vitae justo lorem, non ornare nibh. Pellentesque pretium, tellus ac ultrices faucibus, nibh mauris dapibus lorem, vitae viverra nisl elit sit amet libero. Nam eu blandit risus.</p>
+            <p>Phasellus imperdiet mattis nulla. Integer gravida imperdiet congue. Proin vitae pretium augue. Donec est sem, mattis et blandit ac, blandit at arcu. Donec tempus tincidunt suscipit. Suspendisse eu vulputate lacus.</p>
+        </div>
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ipsum non leo tristique eget facilisis lacus commodo. Curabitur vitae justo lorem, non ornare nibh. Pellentesque pretium, tellus ac ultrices faucibus, nibh mauris dapibus lorem, vitae viverra nisl elit sit amet libero. Nam eu blandit risus.</p>
+            <p>Phasellus imperdiet mattis nulla. Integer gravida imperdiet congue. Proin vitae pretium augue. Donec est sem, mattis et blandit ac, blandit at arcu. Donec tempus tincidunt suscipit. Suspendisse eu vulputate lacus.</p>
+        </div>
+    </footer>
+<script>
+    document.getElementById('burger').onclick = ToggleMenu;
+    function ToggleMenu()
+    {
+        var menu = document.getElementsByClassName('menu')[0];
+        if(menu.style.display=='none')
+        {
+            menu.style.display = 'flex';
+        }
+        else
+        {
+            menu.style.display = 'none';
+        }
+    }
+</script>
+</body>
+</html>
